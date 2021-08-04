@@ -1,0 +1,1084 @@
+@charset "UTF-8";
+/* A Modern CSS Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ブレークポイント */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+html, body, h1, h2, h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #444444;
+}
+
+.inner {
+  width: 80%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 376px) {
+  .inner {
+    width: 85%;
+  }
+}
+
+p {
+  font: normal normal normal 14px/19px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  p {
+    font: normal normal normal 12px/16px Noto Sans JP;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  p {
+    font: normal normal normal 8px/10px Noto Sans JP;
+    letter-spacing: -0.8px;
+  }
+}
+
+header {
+  height: 130px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 376px) {
+  header {
+    height: 50px;
+    padding: 5px;
+  }
+}
+
+header .logo {
+  width: 263px;
+  height: 73px;
+}
+
+@media screen and (max-width: 1024px) {
+  header .logo {
+    width: 183px;
+    height: 53px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  header .logo {
+    width: 80px;
+    height: 25px;
+  }
+}
+
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+header .tel .reception-time {
+  margin-bottom: 7px;
+}
+
+@media screen and (max-width: 376px) {
+  header .tel .reception-time {
+    letter-spacing: -0.8px;
+  }
+}
+
+header .tel .tel-number {
+  text-align: right;
+  font: normal normal bold 24px/24px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #21A937;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 376px) {
+  header .tel .tel-number {
+    font: normal normal bold 18px/18px Noto Sans JP;
+  }
+}
+
+header .tel .tel-number img {
+  display: inline-block;
+  margin-right: 7px;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 376px) {
+  header .tel .tel-number img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+}
+
+footer {
+  padding-top: 196px;
+  padding-bottom: 163px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  footer {
+    padding-top: 156px;
+    padding-bottom: 63px;
+  }
+}
+
+footer .access-map {
+  width: 48%;
+  max-width: 608px;
+  height: 100%;
+  /* height: 370px; */
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-map {
+    width: 100%;
+    max-width: 100%;
+    height: 440px;
+    margin-right: 0;
+  }
+}
+
+footer .access-map iframe {
+  width: 100%;
+}
+
+footer .access-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 48%;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info .footer-logo {
+    margin: 20px auto 0;
+  }
+}
+
+footer .access-info .footer-logo img {
+  width: 263px;
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info .footer-logo img {
+    width: 183px;
+    margin: 20px;
+  }
+}
+
+footer .access-info .footer-logo p {
+  font: normal normal normal 16px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+footer .access-info .footer-logo p:first-of-type {
+  margin-right: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info .footer-logo p {
+    display: block;
+    margin-bottom: 0;
+    font: normal normal normal 16px/24px Noto Sans JP;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  footer .access-info .footer-logo p {
+    text-align: center;
+  }
+}
+
+footer .access-info .tel {
+  font: normal normal bold 24px/24px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #21A937;
+  margin-bottom: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info .tel {
+    text-align: center;
+    font: normal normal bold 16px/16px Noto Sans JP;
+  }
+}
+
+footer .access-info .tel img {
+  float: left;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info .tel img {
+    float: none;
+    display: inline-block;
+    width: 20px;
+    margin-right: 0;
+  }
+}
+
+footer .access-info .medical-time {
+  width: 100%;
+  border-top: 2px solid #E7E7E7;
+  border-bottom: 2px solid #E7E7E7;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info .medical-time {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+footer .access-info .medical-time dl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info .medical-time dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+  }
+}
+
+footer .access-info .medical-time dl dt {
+  font: normal normal normal 14px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  border-right: 2px solid #E7E7E7;
+  width: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info .medical-time dl dt {
+    border: none;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center;
+    font: normal normal normal 12px/32px Noto Sans JP;
+  }
+}
+
+footer .access-info .medical-time dl .notice-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info .medical-time dl .notice-box {
+    border: none;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center;
+  }
+}
+
+footer .access-info .medical-time dl dd {
+  font: normal normal normal 14px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info .medical-time dl dd {
+    font: normal normal normal 12px/32px Noto Sans JP;
+  }
+}
+
+footer .access-info .medical-time dl dd:nth-of-type(1) {
+  margin: 0 28px;
+}
+
+footer .access-info .medical-time dl dd:nth-of-type(1) span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(10%, #99E5A5));
+  background: -webkit-linear-gradient(transparent 80%, #99E5A5 10%);
+  background: linear-gradient(transparent 80%, #99E5A5 10%);
+}
+
+@media screen and (max-width: 376px) {
+  footer .access-info .medical-time dl dd:nth-of-type(1) {
+    margin: 0 10px;
+  }
+}
+
+footer .access-info .medical-time dl dd:nth-of-type(2) {
+  margin-right: 17px;
+}
+
+footer .access-info .medical-time .holiday {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .access-info .medical-time .holiday {
+    margin: 20px;
+  }
+}
+
+footer .copyright {
+  text-align: right;
+  font: normal normal normal 11px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .copyright {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center;
+  }
+}
+
+.p-mainvisual {
+  width: 100%;
+  height: 974px;
+  display: block;
+  position: relative;
+  background-image: url("../img/fv.png");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 162px;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-mainvisual {
+    margin-bottom: 50px;
+    height: 947px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-mainvisual {
+    height: 500px;
+    background-position: 70% 0;
+  }
+}
+
+.p-mainvisual h1 span {
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  display: block;
+  position: absolute;
+  width: 102px;
+  height: 565px;
+  padding: 20px 37px;
+  background-color: #ffffff;
+  text-align: left;
+  font: normal normal bold 28px/34px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-mainvisual h1 span {
+    font: normal normal bold 24px/30px Noto Sans JP;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-mainvisual h1 span {
+    font: normal normal bold 18px/0px Noto Sans JP;
+    width: 42px;
+    height: 360px;
+    padding: 10px 20px;
+  }
+}
+
+.p-mainvisual h1 .ttl1 {
+  top: 133px;
+  left: 393px;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-mainvisual h1 .ttl1 {
+    left: 200px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-mainvisual h1 .ttl1 {
+    top: 30px;
+    left: 120px;
+  }
+}
+
+.p-mainvisual h1 .ttl2 {
+  top: 133px;
+  left: 211px;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-mainvisual h1 .ttl2 {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-mainvisual h1 .ttl2 {
+    top: 30px;
+    left: 40px;
+  }
+}
+
+.p-mainvisual h1 .ttl2 strong {
+  color: #21A937;
+}
+
+.p-concept {
+  height: 420px;
+  margin-bottom: 82px;
+  /* タブレットサイズ */
+}
+
+@media screen and (max-width: 1024px) {
+  .p-concept {
+    height: auto;
+    margin-bottom: 0;
+  }
+}
+
+.p-concept img {
+  width: 60%;
+  max-width: 690px;
+}
+
+@media screen and (max-width: 1300px) {
+  .p-concept img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .p-concept img {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+.p-concept article {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  /* タブレットサイズ */
+}
+
+@media screen and (max-width: 1024px) {
+  .p-concept article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.p-concept .concept-text {
+  width: 45%;
+  max-width: 390px;
+  /* タブレットサイズ */
+}
+
+@media screen and (max-width: 1024px) {
+  .p-concept .concept-text {
+    text-align: center;
+    width: 80%;
+    max-width: 80%;
+  }
+}
+
+.p-concept .concept-text h2 {
+  font: normal normal bold 24px/35px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-concept .concept-text h2 {
+    /* width: 80%; */
+    max-width: 300px;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-concept .concept-text h2 {
+    font: normal normal bold 18px/24px Noto Sans JP;
+  }
+}
+
+.p-concept .concept-text h2 span {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(25%, #99E5A5));
+  background: -webkit-linear-gradient(transparent 70%, #99E5A5 25%);
+  background: linear-gradient(transparent 70%, #99E5A5 25%);
+  padding-right: 5px;
+}
+
+.p-concept .concept-text h2 span:first-child {
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 376px) {
+  .p-concept .concept-text h2 span:first-child {
+    margin-bottom: 16px;
+  }
+}
+
+.p-concept .concept-text h2 span:last-child {
+  margin-bottom: 37px;
+}
+
+@media screen and (max-width: 376px) {
+  .p-concept .concept-text h2 span:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.p-concept .concept-text p {
+  font: normal normal normal 16px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-concept .concept-text p {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-concept .concept-text p {
+    font: normal normal normal 11px/24px Noto Sans JP;
+  }
+}
+
+.p-contents {
+  width: 100%;
+  background-color: #F5FCF8;
+  text-align: center;
+}
+
+.p-contents h2 {
+  display: inline-block;
+  font: normal normal bold 24px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 78px auto 70px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(25%, #99E5A5));
+  background: -webkit-linear-gradient(transparent 70%, #99E5A5 25%);
+  background: linear-gradient(transparent 70%, #99E5A5 25%);
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-contents h2 {
+    margin: 80px auto 68px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-contents h2 {
+    font: normal normal bold 18px/24px Noto Sans JP;
+    margin: 40px auto 34px;
+  }
+}
+
+.p-contents p {
+  font: normal normal normal 16px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 34px;
+}
+
+@media screen and (max-width: 376px) {
+  .p-contents p {
+    font: normal normal bold 12px/24px Noto Sans JP;
+  }
+}
+
+.p-contents .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-contents .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.p-contents .content article {
+  max-width: 380px;
+  width: 32%;
+  max-height: 1591px;
+  /* max-height: 630px; */
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #C9C9C9;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding-bottom: 180px;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-contents .content article {
+    max-width: 100%;
+    width: 100%;
+    height: 470px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-contents .content article {
+    height: 420px;
+  }
+}
+
+.p-contents .content article h3 {
+  margin: 40px auto 45px;
+  font: normal normal bold 24px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (max-width: 376px) {
+  .p-contents .content article h3 {
+    font: normal normal bold 16px/20px Noto Sans JP;
+  }
+}
+
+.p-contents .content article p {
+  padding: 0 30px;
+  padding-top: 0;
+  margin: 0;
+  font: normal normal bold 16px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  text-align: left;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-contents .content article p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-contents .content article p {
+    font: normal normal bold 12px/24px Noto Sans JP;
+  }
+}
+
+.p-contents .content article img {
+  display: block;
+  width: 187px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+
+@media screen and (max-width: 1150px) {
+  .p-contents .content article img {
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .p-contents .content article img {
+    left: 38%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-contents .content article img {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .p-contents .content article:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.p-info {
+  width: 100%;
+  background-color: #F5FCF8;
+  padding-bottom: 112px;
+}
+
+.p-info h2 {
+  padding: 82px 0 70px;
+  font: normal normal bold 24px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+}
+
+.p-info h2 span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(25%, #99E5A5));
+  background: -webkit-linear-gradient(transparent 70%, #99E5A5 25%);
+  background: linear-gradient(transparent 70%, #99E5A5 25%);
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 376px) {
+  .p-info h2 {
+    font: normal normal bold 18px/28px Noto Sans JP;
+    padding: 50px 0 41px;
+  }
+}
+
+.p-info .info-text {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 29px 66px;
+}
+
+@media screen and (max-width: 376px) {
+  .p-info .info-text {
+    padding: 0 10px;
+  }
+}
+
+.p-info .info-text dl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 2px solid #E7E7E7;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-info .info-text dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-info .info-text dl {
+    padding: 10px 0;
+  }
+}
+
+.p-info .info-text dl dt {
+  max-width: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-info .info-text dl dt {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.p-info .info-text dl dt p:first-child {
+  color: #21A937;
+  width: 86px;
+  display: inline-block;
+  float: left;
+  font: normal normal bold 16px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-info .info-text dl dt p:first-child {
+    display: block;
+    float: none;
+    margin: 0 atuo;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-info .info-text dl dt p:first-child {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+.p-info .info-text dl dt p:last-child {
+  font: normal normal bold 12px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #fff;
+  background: #444444 0% 0% no-repeat padding-box;
+  width: 80px;
+  text-align: center;
+  height: 38px;
+  /* margin-right: 30px; */
+}
+
+@media screen and (max-width: 1024px) {
+  .p-info .info-text dl dt p:last-child {
+    margin: 20px 0;
+    font: normal normal bold 12px/25px Noto Sans JP;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-info .info-text dl dt p:last-child {
+    margin: 10px 0;
+  }
+}
+
+.p-info .info-text dl dd {
+  font: normal normal bold 16px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  max-width: 780px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-info .info-text dl dd {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-info .info-text dl dd {
+    font: normal normal bold 12px/24px Noto Sans JP;
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+
+.p-info .info-text a {
+  text-align: right;
+  font: normal normal bold 16px/38px Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-info .info-text a {
+    margin: 30px 0 15px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .p-info .info-text a {
+    margin: 10px 10px 15px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+html, body, h1, h2, h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: $text-maincolor;
+}
+
+.inner {
+    width: 80%;
+    max-width: 1180px;
+    margin: 0 auto;
+
+    @media screen and (max-width:376px) {
+        width: 85%;
+    } 
+}
+
+p {
+    font: normal normal normal 14px/19px Noto Sans JP;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0px;
+    opacity: 1;
+
+    @media screen and (max-width:1024px) {
+        font: normal normal normal 12px/16px Noto Sans JP;
+    }
+
+    @media screen and (max-width:376px) {
+        font: normal normal normal 8px/10px Noto Sans JP;
+        letter-spacing: -0.8px;
+    }
+}
