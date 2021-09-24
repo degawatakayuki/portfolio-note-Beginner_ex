@@ -33,10 +33,10 @@ header {
 
         .reception-time {
             margin-bottom: 9px;
-            padding-left: 50px;
 
             @media screen and (max-width:376px) {
-                letter-spacing: -0.8px;
+                letter-spacing: -1px;
+                margin-bottom: 5px;
             }
         }
 
