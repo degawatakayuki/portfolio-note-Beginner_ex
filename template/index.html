@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <meta name=“robots” content=“noindex”>
     <title>石井総合内科クリニック</title>
 </head>
@@ -58,37 +61,29 @@
     </section><!-- p-contents -->
     <section class="p-info">
         <h2><span>お知らせ</span></h2>
-        <div class="info-text inner">
-            <dl>
-                <dt>
-                    <p>2020.12.22</p>
-                    <p>休診情報</p>
-                </dt>
-                <dd>2021年1月の休診日は5日、17日、27日となります。</dd>
-            </dl>
-            <dl>
-                <dt>
-                    <p>2020.12.11</p>
-                    <p>イベント</p>
-                </dt>
-                <dd>当院でクリスマスイベントを行います。南高校吹奏楽団をお呼びして、ロビーコンサートを開催予定です。</dd>
-            </dl>
-            <dl>
-                <dt>
-                    <p>2020.12.01</p>
-                    <p>採用</p>
-                </dt>
-                <dd>当院では臨床検査技師を募集しております。詳しい福利厚生についてご説明させていただきます。当院で働く…</dd>
-            </dl>
-            <dl>
-                <dt>
-                    <p>2020.11.12</p>
-                    <p>イベント</p>
-                </dt>
-                <dd>ホームページをリニューアルしました。</dd>
-            </dl>
+        <ul class="info-text inner">
+            <li>
+                <time>2020.12.22</time>
+                <span class="info-category">休診情報</span>
+                <span class="info-desc">2021年1月の休診日は5日、17日、27日となります。</span>
+            </li>
+            <li>
+                <time>2020.12.11</time>
+                <span class="info-category">イベント</span>
+                <span class="info-desc">当院でクリスマスイベントを行います。南高校吹奏楽団をお呼びして、ロビーコンサートを開催予定です。</span>
+            </li>
+            <li>
+                <time>2020.12.01</time>
+                <span class="info-category">採用</span>
+                <span class="info-desc">当院では臨床検査技師を募集しております。詳しい福利厚生についてご説明させていただきます。当院で働く…</span>
+            </li>
+            <li>
+                <time>2020.11.12</time>
+                <span class="info-category">イベント</span>
+                <span class="info-desc">ホームページをリニューアルしました。</span>
+            </li>
             <a href="#">すべて見る ▶</a>
-        </div>
+        </ul>
     </section><!-- p-info -->
     <footer class="inner">
         <div class="access-map">
@@ -99,8 +94,9 @@
                 <img src="img/logo-info.png" alt="石井総合内科クリニックロゴ">
                 <p>〒000-0000</p>
                 <p>山形県山形市七日町xxxxxx</p>
+                <p class="tel"><img src="img/tel-icon.png" alt="電話アイコン">000-0000-0000</p>
             </div>
-            <p class="tel"><img src="img/tel-icon.png" alt="電話アイコン">000-0000-0000</p>
+            
             <div class="medical-time">
                 <dl>
                     <dt>診療時間</dt>
@@ -127,7 +123,7 @@
                     </div>
                 </dl>
                 <dl class="holiday">
-                    <dt>休診日</dt>
+                    <dt>休診日</dt> 
                     <div class="notice-box">
                         <dd>日曜・祝日</dd>
                     </div>

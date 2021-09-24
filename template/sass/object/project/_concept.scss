@@ -39,18 +39,18 @@
         max-width: 390px;
 
         /* タブレットサイズ */
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width:1025px) {
             text-align: center;
             width: 80%;
             max-width: 80%;
         }
         
         h2 {
-            font: normal normal bold 24px/35px Noto Sans JP;
+            font: normal normal bold 24px/32px Noto Sans JP;
             font-family: 'Noto Sans JP', sans-serif;
 
-            @media screen and (max-width:1024px) {
-                /* width: 80%; */
+            @media screen and (max-width:1025px) {
+                font: normal normal bold 24px/35px Noto Sans JP;
                 max-width: 300px;
                 display: inline-block;
             }
@@ -86,9 +86,10 @@
             font: normal normal normal 16px/38px Noto Sans JP;
             font-family: 'Noto Sans JP', sans-serif;
 
-            @media screen and (max-width:1024px) {
-                margin-bottom: 60px;
+            @media screen and (max-width:1025px) {
+                margin: 0 auto 60px;
                 width: 100%;
+                max-width:  420px;
             }
 
             @media screen and (max-width:376px) {

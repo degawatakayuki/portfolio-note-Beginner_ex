@@ -162,7 +162,7 @@ header {
 
 header .logo {
   width: 263px;
-  height: 73px;
+  height: 80px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -185,7 +185,8 @@ header .logo img {
 }
 
 header .tel .reception-time {
-  margin-bottom: 7px;
+  margin-bottom: 9px;
+  padding-left: 50px;
 }
 
 @media screen and (max-width: 376px) {
@@ -202,6 +203,12 @@ header .tel .tel-number {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1025px) {
+  header .tel .tel-number {
+    font: normal normal bold 16px/16px Noto Sans JP;
+  }
+}
+
 @media screen and (max-width: 376px) {
   header .tel .tel-number {
     font: normal normal bold 18px/18px Noto Sans JP;
@@ -214,11 +221,19 @@ header .tel .tel-number img {
   vertical-align: bottom;
 }
 
+@media screen and (max-width: 1025px) {
+  header .tel .tel-number img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+
 @media screen and (max-width: 376px) {
   header .tel .tel-number img {
     width: 15px;
     height: 15px;
-    margin-right: 5px;
   }
 }
 
@@ -283,6 +298,31 @@ footer .access-info {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 48%;
+  /* .tel {
+            font: normal normal bold 24px/24px Noto Sans JP;
+            font-family: 'Noto Sans JP', sans-serif;
+            color: $text-accentcolor;
+            margin-bottom: 29px;
+
+            @media screen and (max-width:1025px) {
+                font: normal normal bold 16px/16px Noto Sans JP;
+                display: block;
+            }
+
+            img {
+                float: left;
+               
+                    width: 18px;
+
+                @media screen and (max-width:1025px) {
+                   
+                    display: inline-block;
+                    width: 18px;
+                    margin: 0;
+                    padding-top: 5px;
+                }
+            }
+        } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -299,7 +339,7 @@ footer .access-info {
 
 footer .access-info .footer-logo img {
   width: 263px;
-  margin: 25px 0;
+  margin: 0 0 26px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -312,16 +352,22 @@ footer .access-info .footer-logo img {
 footer .access-info .footer-logo p {
   font: normal normal normal 16px/38px Noto Sans JP;
   font-family: 'Noto Sans JP', sans-serif;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   display: inline-block;
 }
 
 footer .access-info .footer-logo p:first-of-type {
   margin-right: 16px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+footer .access-info .footer-logo p:not(:first-of-type) {
+  text-align: left;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1025px) {
   footer .access-info .footer-logo p {
     display: block;
     margin-bottom: 0;
@@ -335,31 +381,43 @@ footer .access-info .footer-logo p:first-of-type {
   }
 }
 
-footer .access-info .tel {
+footer .access-info .footer-logo .tel {
   font: normal normal bold 24px/24px Noto Sans JP;
   font-family: 'Noto Sans JP', sans-serif;
   color: #21A937;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
+  display: block;
 }
 
-@media screen and (max-width: 1024px) {
-  footer .access-info .tel {
-    text-align: center;
+@media screen and (max-width: 1025px) {
+  footer .access-info .footer-logo .tel {
     font: normal normal bold 16px/16px Noto Sans JP;
+    padding-top: 2px;
   }
 }
 
-footer .access-info .tel img {
+footer .access-info .footer-logo .tel img {
   float: left;
   margin-right: 5px;
+  width: 25px;
+  padding-top: 2px;
 }
 
-@media screen and (max-width: 1024px) {
-  footer .access-info .tel img {
-    float: none;
+@media screen and (max-width: 1025px) {
+  footer .access-info .footer-logo .tel img {
     display: inline-block;
-    width: 20px;
-    margin-right: 0;
+    width: 18px;
+    margin: 0;
+    padding-top: 1px;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  footer .access-info .footer-logo .tel img {
+    display: inline-block;
+    width: 18px;
+    margin: 0;
+    padding-top: 1px;
   }
 }
 
@@ -436,6 +494,7 @@ footer .access-info .medical-time dl .notice-box {
         -ms-flex-item-align: center;
                 -ms-grid-row-align: center;
             align-self: center;
+    align-self: center;
   }
 }
 
@@ -499,7 +558,6 @@ footer .copyright {
   width: 100%;
   height: 974px;
   display: block;
-  position: relative;
   background-image: url("../img/fv.png");
   background-size: cover;
   background-position: center;
@@ -520,6 +578,15 @@ footer .copyright {
   }
 }
 
+.p-mainvisual h1 {
+  display: block;
+  width: 80%;
+  max-width: 1180px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
 .p-mainvisual h1 span {
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
@@ -528,17 +595,17 @@ footer .copyright {
   position: absolute;
   width: 102px;
   height: 565px;
-  padding: 20px 37px;
+  padding: 20px 10px;
   background-color: #ffffff;
   text-align: left;
-  font: normal normal bold 28px/34px Noto Sans JP;
+  font: normal normal bold 28px/82px Noto Sans JP;
   font-family: 'Noto Sans JP', sans-serif;
   letter-spacing: 3px;
 }
 
 @media screen and (max-width: 1024px) {
   .p-mainvisual h1 span {
-    font: normal normal bold 24px/30px Noto Sans JP;
+    font: normal normal bold 24px/82px Noto Sans JP;
   }
 }
 
@@ -552,8 +619,10 @@ footer .copyright {
 }
 
 .p-mainvisual h1 .ttl1 {
+  display: block;
+  position: absolute;
   top: 133px;
-  left: 393px;
+  left: 20%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -571,7 +640,7 @@ footer .copyright {
 
 .p-mainvisual h1 .ttl2 {
   top: 133px;
-  left: 211px;
+  left: 5%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -659,7 +728,7 @@ footer .copyright {
   /* タブレットサイズ */
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .p-concept .concept-text {
     text-align: center;
     width: 80%;
@@ -668,13 +737,13 @@ footer .copyright {
 }
 
 .p-concept .concept-text h2 {
-  font: normal normal bold 24px/35px Noto Sans JP;
+  font: normal normal bold 24px/32px Noto Sans JP;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .p-concept .concept-text h2 {
-    /* width: 80%; */
+    font: normal normal bold 24px/35px Noto Sans JP;
     max-width: 300px;
     display: inline-block;
   }
@@ -719,10 +788,11 @@ footer .copyright {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .p-concept .concept-text p {
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
     width: 100%;
+    max-width: 420px;
   }
 }
 
@@ -742,7 +812,7 @@ footer .copyright {
   display: inline-block;
   font: normal normal bold 24px/38px Noto Sans JP;
   font-family: 'Noto Sans JP', sans-serif;
-  margin: 78px auto 70px;
+  margin: 80px auto 73px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(25%, #99E5A5));
   background: -webkit-linear-gradient(transparent 70%, #99E5A5 25%);
   background: linear-gradient(transparent 70%, #99E5A5 25%);
@@ -832,7 +902,7 @@ footer .copyright {
 }
 
 .p-contents .content article h3 {
-  margin: 40px auto 45px;
+  margin: 42px auto 48px;
   font: normal normal bold 24px/38px Noto Sans JP;
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -908,7 +978,7 @@ footer .copyright {
 }
 
 .p-info h2 {
-  padding: 82px 0 70px;
+  padding: 82px 0 71px;
   font: normal normal bold 24px/38px Noto Sans JP;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
@@ -943,6 +1013,7 @@ footer .copyright {
       -ms-flex-flow: column;
           flex-flow: column;
   padding: 29px 66px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 376px) {
@@ -951,47 +1022,99 @@ footer .copyright {
   }
 }
 
-.p-info .info-text dl {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.p-info .info-text li {
   padding: 20px 0;
   border-bottom: 2px solid #E7E7E7;
+  /* dt {
+                max-width: 200px;
+                display: flex;
+
+                @media screen and (max-width:1024px) {
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                p {
+                    &:first-child {
+                        color: $text-accentcolor;
+                        width: 86px;
+                        display: inline-block;
+                        float: left;
+                        font: normal normal bold 16px/38px Noto Sans JP;
+                        font-family: 'Noto Sans JP', sans-serif;
+                        margin-right: 30px;
+
+                        @media screen and (max-width:1024px) {
+                            display: block;
+                            float: none;
+                            margin: 0 atuo;
+                        }
+
+                        @media screen and (max-width:376px) {
+                            margin-right: 0;
+                            text-align: center;
+                        }
+                    }
+
+                    &:last-child {
+                        font: normal normal bold 12px/38px Noto Sans JP;
+                        font-family: 'Noto Sans JP', sans-serif;
+                        color: #fff;
+                        background: #444444 0% 0% no-repeat padding-box;
+                        width: 80px;
+                        text-align: center;
+                        height: 38px;
+
+                        @media screen and (max-width:1024px) {
+                            margin: 20px 0;
+                            font: normal normal bold 12px/25px Noto Sans JP;
+                            height: 25px;
+                        }
+
+                        @media screen and (max-width:376px) {
+                            margin: 10px 0;
+                        }
+                    }
+                }
+                
+            }
+            dd {
+                font: normal normal bold 16px/38px Noto Sans JP;
+                font-family: 'Noto Sans JP', sans-serif;
+                max-width: 780px;
+                margin-left: 30px;
+
+                @media screen and (max-width:1024px) {
+                    text-align: center;
+                    max-width: 100%;
+                }
+
+                @media screen and (max-width:376px) {
+                    font: normal normal bold 12px/24px Noto Sans JP;
+                    margin-left: 0;
+                    padding: 10px;
+                }
+            } */
 }
 
 @media screen and (max-width: 1024px) {
-  .p-info .info-text dl {
+  .p-info .info-text li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 376px) {
-  .p-info .info-text dl {
+  .p-info .info-text li {
     padding: 10px 0;
   }
 }
 
-.p-info .info-text dl dt {
-  max-width: 200px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media screen and (max-width: 1024px) {
-  .p-info .info-text dl dt {
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.p-info .info-text dl dt p:first-child {
+.p-info .info-text li time {
   color: #21A937;
   width: 86px;
   display: inline-block;
@@ -999,24 +1122,27 @@ footer .copyright {
   font: normal normal bold 16px/38px Noto Sans JP;
   font-family: 'Noto Sans JP', sans-serif;
   margin-right: 30px;
+  text-align: center;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {
-  .p-info .info-text dl dt p:first-child {
+  .p-info .info-text li time {
     display: block;
     float: none;
-    margin: 0 atuo;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 376px) {
-  .p-info .info-text dl dt p:first-child {
-    margin-right: 0;
+  .p-info .info-text li time {
     text-align: center;
   }
 }
 
-.p-info .info-text dl dt p:last-child {
+.p-info .info-text li .info-category {
+  display: inline-block;
+  max-width: 200px;
   font: normal normal bold 12px/38px Noto Sans JP;
   font-family: 'Noto Sans JP', sans-serif;
   color: #fff;
@@ -1024,39 +1150,38 @@ footer .copyright {
   width: 80px;
   text-align: center;
   height: 38px;
-  /* margin-right: 30px; */
+  margin-right: 30px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
-  .p-info .info-text dl dt p:last-child {
-    margin: 20px 0;
+  .p-info .info-text li .info-category {
+    margin: 20px auto;
     font: normal normal bold 12px/25px Noto Sans JP;
     height: 25px;
+    display: block;
   }
 }
 
 @media screen and (max-width: 376px) {
-  .p-info .info-text dl dt p:last-child {
-    margin: 10px 0;
+  .p-info .info-text li .info-category {
+    margin: 10px auto;
   }
 }
 
-.p-info .info-text dl dd {
-  font: normal normal bold 16px/38px Noto Sans JP;
-  font-family: 'Noto Sans JP', sans-serif;
-  max-width: 780px;
-  margin-left: 30px;
+.p-info .info-text li .info-desc {
+  line-height: 38px;
 }
 
 @media screen and (max-width: 1024px) {
-  .p-info .info-text dl dd {
+  .p-info .info-text li .info-desc {
     text-align: center;
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 376px) {
-  .p-info .info-text dl dd {
+  .p-info .info-text li .info-desc {
     font: normal normal bold 12px/24px Noto Sans JP;
     margin-left: 0;
     padding: 10px;
