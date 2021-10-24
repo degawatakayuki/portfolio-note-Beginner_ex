@@ -111,7 +111,7 @@ html, body, h1, h2, h3 {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .inner {
     width: 85%;
   }
@@ -130,7 +130,7 @@ p {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   p {
     font: normal normal normal 8px/10px Noto Sans JP;
     letter-spacing: -0.8px;
@@ -153,7 +153,7 @@ header {
           align-items: center;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   header {
     height: 50px;
     /* padding: 5px; */
@@ -172,7 +172,7 @@ header .logo {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   header .logo {
     width: 80px;
     height: 25px;
@@ -188,7 +188,7 @@ header .tel .reception-time {
   margin-bottom: 9px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   header .tel .reception-time {
     display: -webkit-box;
     display: -webkit-flex;
@@ -202,9 +202,9 @@ header .tel .reception-time {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-    /* margin-top: 5px; */
     margin-bottom: 0;
-    letter-spacing: -1px;
+    letter-spacing: 0;
+    text-align: right;
   }
 }
 
@@ -212,10 +212,10 @@ header .tel .reception-time span:first-of-type {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   header .tel .reception-time span:first-of-type {
     margin-right: 0;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
   }
 }
 
@@ -233,9 +233,9 @@ header .tel .tel-number {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   header .tel .tel-number {
-    font: normal normal bold 18px/18px Noto Sans JP;
+    font: normal normal bold 16px/16px Noto Sans JP;
     margin-top: 0;
     text-align: left;
   }
@@ -260,12 +260,13 @@ header .tel .tel-number img {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   header .tel .tel-number img {
     width: 15px;
     height: 15px;
     left: 0;
     margin-right: 2px;
+    top: -1px;
   }
 }
 
@@ -292,7 +293,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   footer {
     padding-top: 156px;
     padding-bottom: 63px;
@@ -409,7 +410,7 @@ footer .access-info .footer-logo p:not(:first-of-type) {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   footer .access-info .footer-logo p {
     text-align: center;
   }
@@ -553,7 +554,7 @@ footer .access-info .medical-time dl dd:nth-of-type(1) span {
   background: linear-gradient(transparent 80%, #99E5A5 10%);
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   footer .access-info .medical-time dl dd:nth-of-type(1) {
     margin: 0 10px;
   }
@@ -590,7 +591,7 @@ footer .copyright {
 
 .p-mainvisual {
   width: 100%;
-  height: 974px;
+  height: 947px;
   display: block;
   background-image: url("../img/fv.png");
   background-size: cover;
@@ -602,13 +603,15 @@ footer .copyright {
   .p-mainvisual {
     margin-bottom: 50px;
     height: 947px;
+    background-image: url("../img/fv@2x_tb.jpg");
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-mainvisual {
     height: 500px;
     background-position: 70% 0;
+    background-image: url("../img/fv@2x_sp.jpg");
   }
 }
 
@@ -643,7 +646,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-mainvisual h1 span {
     font: normal normal bold 18px/0px Noto Sans JP;
     width: 42px;
@@ -665,7 +668,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-mainvisual h1 .ttl1 {
     top: 30px;
     left: 80px;
@@ -683,7 +686,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-mainvisual h1 .ttl2 {
     top: 30px;
     left: 10px;
@@ -783,7 +786,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-concept .concept-text h2 {
     font: normal normal bold 18px/24px Noto Sans JP;
   }
@@ -803,7 +806,7 @@ footer .copyright {
   padding-right: 5px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-concept .concept-text h2 span:first-child {
     margin-bottom: 16px;
   }
@@ -815,7 +818,7 @@ footer .copyright {
   padding-right: 20px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-concept .concept-text h2 span:last-child {
     margin-bottom: 20px;
   }
@@ -834,7 +837,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-concept .concept-text p {
     font: normal normal normal 11px/24px Noto Sans JP;
   }
@@ -863,7 +866,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-contents h2 {
     font: normal normal bold 18px/24px Noto Sans JP;
     margin: 40px auto 34px;
@@ -876,7 +879,7 @@ footer .copyright {
   margin-bottom: 35px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-contents p {
     font: normal normal bold 12px/24px Noto Sans JP;
   }
@@ -933,7 +936,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-contents .content article {
     height: 430px;
   }
@@ -945,7 +948,7 @@ footer .copyright {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-contents .content article h3 {
     font: normal normal bold 16px/20px Noto Sans JP;
   }
@@ -970,7 +973,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-contents .content article p {
     font: normal normal bold 12px/24px Noto Sans JP;
   }
@@ -997,9 +1000,9 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-contents .content article img {
-    left: 19%;
+    left: 22%;
   }
 }
 
@@ -1029,7 +1032,7 @@ footer .copyright {
   padding-right: 5px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-info h2 {
     font: normal normal bold 18px/28px Noto Sans JP;
     padding: 50px 0 41px;
@@ -1054,7 +1057,7 @@ footer .copyright {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-info .info-text {
     padding: 0 10px;
   }
@@ -1088,7 +1091,7 @@ footer .copyright {
                             margin: 0 atuo;
                         }
 
-                        @media screen and (max-width:376px) {
+                        @media screen and (max-width:415px) {
                             margin-right: 0;
                             text-align: center;
                         }
@@ -1109,7 +1112,7 @@ footer .copyright {
                             height: 25px;
                         }
 
-                        @media screen and (max-width:376px) {
+                        @media screen and (max-width:415px) {
                             margin: 10px 0;
                         }
                     }
@@ -1127,7 +1130,7 @@ footer .copyright {
                     max-width: 100%;
                 }
 
-                @media screen and (max-width:376px) {
+                @media screen and (max-width:415px) {
                     font: normal normal bold 12px/24px Noto Sans JP;
                     margin-left: 0;
                     padding: 10px;
@@ -1146,7 +1149,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-info .info-text li {
     padding: 10px 0;
   }
@@ -1172,7 +1175,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-info .info-text li time {
     text-align: center;
   }
@@ -1201,7 +1204,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-info .info-text li .info-category {
     margin: 10px auto;
   }
@@ -1218,7 +1221,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-info .info-text li .info-desc {
     font: normal normal bold 12px/24px Noto Sans JP;
     margin-left: 0;
@@ -1239,7 +1242,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
   .p-info .info-text a {
     margin: 10px 10px 15px 0;
   }

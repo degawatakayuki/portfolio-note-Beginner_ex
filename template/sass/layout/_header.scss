@@ -4,7 +4,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width:376px) {
+    @media screen and (max-width:415px) {
         height: 50px;
         /* padding: 5px; */
     }
@@ -18,7 +18,7 @@ header {
             height: 53px;
         }
 
-        @media screen and (max-width:376px) {
+        @media screen and (max-width:415px) {
             width: 80px;
             height: 25px;
         }
@@ -34,22 +34,22 @@ header {
         .reception-time {
             margin-bottom: 9px;
 
-            @media screen and (max-width:376px) {
+            @media screen and (max-width:415px) {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                /* margin-top: 5px; */
                 margin-bottom: 0;
-                letter-spacing: -1px;
+                letter-spacing: 0;
+                text-align: right;
             }
 
             span {
                 &:first-of-type {
                     margin-right: 10px;
 
-                    @media screen and (max-width:376px) {
+                    @media screen and (max-width:415px) {
                         margin-right: 0;
-                        margin-bottom: 3px;
+                        margin-bottom: 1px;
                     }
                 }
             }
@@ -66,8 +66,8 @@ header {
                 font: normal normal bold 16px/16px Noto Sans JP;
             }
 
-            @media screen and (max-width:376px) {
-                font: normal normal bold 18px/18px Noto Sans JP;
+            @media screen and (max-width:415px) {
+                font: normal normal bold 16px/16px Noto Sans JP;
                 margin-top: 0;
                 text-align: left;
             }
@@ -88,11 +88,12 @@ header {
                     top: 0;
                 }
 
-                @media screen and (max-width:376px) {
+                @media screen and (max-width:415px) {
                     width: 15px;
                     height: 15px;
                     left: 0;
                     margin-right: 2px;
+                    top: -1px
                 }
             }
         }
