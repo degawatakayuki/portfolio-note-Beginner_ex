@@ -155,7 +155,7 @@ header {
 
 @media screen and (max-width: 415px) {
   header {
-    height: 50px;
+    height: 80px;
     /* padding: 5px; */
   }
 }
@@ -174,8 +174,8 @@ header .logo {
 
 @media screen and (max-width: 415px) {
   header .logo {
-    width: 80px;
-    height: 25px;
+    width: 120px;
+    height: 42px;
   }
 }
 
@@ -194,6 +194,7 @@ header .tel .reception-time {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    height: 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -236,7 +237,7 @@ header .tel .tel-number {
 @media screen and (max-width: 415px) {
   header .tel .tel-number {
     font: normal normal bold 16px/16px Noto Sans JP;
-    margin-top: 0;
+    margin-top: 2px;
     text-align: left;
   }
 }
@@ -331,31 +332,6 @@ footer .access-info {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 48%;
-  /* .tel {
-            font: normal normal bold 24px/24px Noto Sans JP;
-            font-family: 'Noto Sans JP', sans-serif;
-            color: $text-accentcolor;
-            margin-bottom: 29px;
-
-            @media screen and (max-width:1025px) {
-                font: normal normal bold 16px/16px Noto Sans JP;
-                display: block;
-            }
-
-            img {
-                float: left;
-               
-                    width: 18px;
-
-                @media screen and (max-width:1025px) {
-                   
-                    display: inline-block;
-                    width: 18px;
-                    margin: 0;
-                    padding-top: 5px;
-                }
-            }
-        } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -387,6 +363,7 @@ footer .access-info .footer-logo p {
   font-family: 'Noto Sans JP', sans-serif;
   margin-bottom: 28px;
   display: inline-block;
+  text-align: center;
 }
 
 footer .access-info .footer-logo p:first-of-type {
@@ -400,6 +377,12 @@ footer .access-info .footer-logo p:nth-child(3) {
 
 footer .access-info .footer-logo p:not(:first-of-type) {
   text-align: left;
+}
+
+@media screen and (max-width: 1025px) {
+  footer .access-info .footer-logo p:not(:first-of-type) {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1025px) {
@@ -428,6 +411,15 @@ footer .access-info .footer-logo .tel {
   footer .access-info .footer-logo .tel {
     font: normal normal bold 16px/16px Noto Sans JP;
     padding-top: 2px;
+    width: 135px;
+    margin: 0 auto 29px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  footer .access-info .footer-logo .tel {
+    width: 125px;
+    margin: 0 auto 29px;
   }
 }
 
@@ -447,7 +439,7 @@ footer .access-info .footer-logo .tel img {
   }
 }
 
-@media screen and (max-width: 366px) {
+@media screen and (max-width: 415px) {
   footer .access-info .footer-logo .tel img {
     display: inline-block;
     width: 18px;
@@ -637,7 +629,7 @@ footer .copyright {
   text-align: left;
   font: normal normal bold 28px/82px Noto Sans JP;
   font-family: 'Noto Sans JP', sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 0.28em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -802,7 +794,6 @@ footer .copyright {
 
 .p-concept .concept-text h2 span:first-child {
   margin-bottom: 35px;
-  padding-left: 20px;
   padding-right: 5px;
 }
 

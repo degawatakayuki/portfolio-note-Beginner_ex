@@ -61,6 +61,7 @@ footer {
                 font-family: 'Noto Sans JP', sans-serif;
                 margin-bottom: 28px;
                 display: inline-block;
+                text-align: center;
 
                 &:first-of-type {
                     margin-right: 17px;
@@ -71,6 +72,10 @@ footer {
                 }
                 &:not(:first-of-type) {
                     text-align: left;
+
+                    @media screen and (max-width:1025px) {
+                        text-align: center;
+                    }
                 }
 
                 @media screen and (max-width:1025px) {
@@ -94,6 +99,12 @@ footer {
                 @media screen and (max-width:1025px) {
                     font: normal normal bold 16px/16px Noto Sans JP;
                     padding-top: 2px;
+                    width: 135px;
+                    margin: 0 auto 29px;
+                }
+                @media screen and (max-width:415px) {
+                    width: 125px;
+                    margin: 0 auto 29px;
                 }
     
                 img {
@@ -108,7 +119,7 @@ footer {
                         margin: 0;
                         padding-top: 1px;
                     }
-                    @media screen and (max-width:366px) {
+                    @media screen and (max-width:415px) {
                         display: inline-block;
                         width: 18px;
                         margin: 0;
@@ -117,32 +128,6 @@ footer {
                 }
             }
         }
-
-        /* .tel {
-            font: normal normal bold 24px/24px Noto Sans JP;
-            font-family: 'Noto Sans JP', sans-serif;
-            color: $text-accentcolor;
-            margin-bottom: 29px;
-
-            @media screen and (max-width:1025px) {
-                font: normal normal bold 16px/16px Noto Sans JP;
-                display: block;
-            }
-
-            img {
-                float: left;
-               
-                    width: 18px;
-
-                @media screen and (max-width:1025px) {
-                   
-                    display: inline-block;
-                    width: 18px;
-                    margin: 0;
-                    padding-top: 5px;
-                }
-            }
-        } */
 
         .medical-time {
             width: 100%;
